@@ -1,4 +1,11 @@
 skyblock.players = {};
+
+
+-- Respawn after death
+minetest.register_on_respawnplayer(function(player)
+    respawn_player(player)
+    return true
+end)
  
 
 -- QUEST MANAGEMENT: init
